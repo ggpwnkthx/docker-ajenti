@@ -12,7 +12,6 @@ docker rm coach_ajenti
 docker run -d \
 	--name coach_ajenti \
 	--net=host \
-	--privileged \
 	-e PASSWORD=$1 \
 	coach/ajenti
 # docker logs coach_ajenti -f
