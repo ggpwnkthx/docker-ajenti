@@ -6,6 +6,7 @@ then
 fi
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR
+docker rmi coach/ajenti
 docker build -t "coach/ajenti" .
 docker kill coach_ajenti
 docker rm coach_ajenti
