@@ -16,7 +16,7 @@ RUN git clone https://github.com/FortAwesome/Font-Awesome.git
 RUN mv /Font-Awesome /usr/local/lib/python2.7/dist-packages/ajenti_plugin_core/resources/vendor/fontawesome
 
 # Install basic Ajenti 2 Plugins
-RUN pip install ajenti.plugin.settings
+RUN cd /usr/local/lib/python2.7/dist-packages && git clone https://github.com/ggpwnkthx/ajenti_plugin_settings.git
 
 # Install COACH dependancies
 RUN cd /usr/local/lib/python2.7/dist-packages && git clone https://github.com/ggpwnkthx/ajenti_plugin_coach.git
